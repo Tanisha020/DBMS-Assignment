@@ -1,4 +1,4 @@
-# Database Design Rationale: Swiggy and redBus
+# Database Design Rationale: Swiggy and RedBus
 
 ## 1. Normalization Approach
 The databases for both Swiggy and RedBus were designed following **3rd Normal Form (3NF)** principles to eliminate data redundancy and maintain data integrity.
@@ -7,7 +7,7 @@ The databases for both Swiggy and RedBus were designed following **3rd Normal Fo
   - Key entities like `Customer`, `Restaurant`, and `Order` are separated into individual tables to avoid duplication and ensure data consistency.
   - Attributes such as `WalletBalance` (in `Customer`) and `Rating` (in `Restaurant`) are stored specific to their respective entities.
 
-- **redBus**:
+- **RedBus**:
   - Entities such as `Bus`, `Agency`, and `Route` were normalized to ensure that related data is stored only in the appropriate tables. For example, `Driver` information is maintained in the `Driver` table and referenced using foreign keys in the `Route` table.
 
 ## 2. Key Normalization Decisions
@@ -37,10 +37,10 @@ These design choices optimize frequently queried data while maintaining overall 
 - **Choice Made**: Phone numbers are stored as strings.
 - **Benefits**:
   - Supports leading zeros (important for international numbers).
-  - Allows storing formatted numbers (e.g., `+91-9876543210`).
+  - Allows storing formatted numbers (e.g., `+91-9876XXXX10`).
 - **Drawbacks**:
-  - Slightly higher storage overhead.
-  - Arithmetic operations (though rarely needed) cannot be performed.
+  - Slightly higher storage.
+
 
 ## 5. Advantages of Normalization
 - **Data Integrity**:
@@ -55,3 +55,5 @@ These design choices optimize frequently queried data while maintaining overall 
   - Querying all menu items for a specific restaurant is efficient using the `Menu` and `Menu_Item` tables.
 - **redBus**:
   - Fetching all stops on a route is straightforward using the `RouteStop` table.
+
+---
