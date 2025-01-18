@@ -11,7 +11,7 @@ This is the Entity-Relationship (ER) diagram for **Swiggy**, a popular food deli
 
 ## 2. Red Bus
 
-![Red Bus ER Diagram](.\redBus_ER.png)
+![Red Bus ER Diagram](redBus_ER.png)
 
 ### Description:
 This ER diagram represents **Red Bus**, an online bus ticketing platform, and shows the interactions between users, bookings, buses, and ticketing systems.
