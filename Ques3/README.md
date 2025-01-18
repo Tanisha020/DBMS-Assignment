@@ -11,7 +11,7 @@ WHERE a_src.name = 'BORG EL ARAB INTL'
 AND a_dest.name = 'LABUAN';
 ```
 
-![Result](images\ques1.png)
+![Result](images/ques1.png)
 
 ## Answer 2
 
@@ -121,7 +121,7 @@ JOIN airplane a ON f.airplane_id = a.airplane_id
 JOIN airplane_type t ON a.type_id = t.type_id 
 WHERE b.passenger_id = 16678;
 ```
-![Result](.\images\ques3.png)
+![Result](images/ques3.png)
 
 ## Answer 4
 
@@ -134,7 +134,7 @@ WHERE w.humidity >= 98
 AND w.airpressure > 1015;
 ```
 
-![Result](.\images\ques4.png)
+![Result](images/ques4.png)
 
 ```sql
 SELECT DISTINCT DATE(f.departure) AS flight_date
@@ -144,7 +144,7 @@ WHERE w.humidity >= 98
 AND w.airpressure > 1015;
 ```
 
-![Result](.\images\ques4b.png)
+![Result](images/ques4b.png)
 
 ### Assuming it is not compulsory to have flight on that day
 ```sql
@@ -153,7 +153,7 @@ FROM weatherdata
 WHERE humidity >= 98
 AND airpressure > 1015;
 ```
-![Result](.\images\ques4c.png)
+![Result](images/ques4c.png)
 
 
 ## Answer 5
