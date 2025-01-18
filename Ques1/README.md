@@ -3,6 +3,7 @@
 ## 1. Swiggy
 
 ![Swiggy ER Diagram](.\swiggy_ER.jpg)
+![Swiggy ER Diagram](Ques1\swiggy_ER.jpg)
 
 ### Description:
 This is the Entity-Relationship (ER) diagram for **Swiggy**, a popular food delivery service. It outlines the relationships between various entities such as customers, restaurants, orders, and deliveries.
