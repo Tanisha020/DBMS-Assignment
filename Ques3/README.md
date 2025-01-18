@@ -11,7 +11,7 @@ WHERE a_src.name = 'BORG EL ARAB INTL'
 AND a_dest.name = 'LABUAN';
 ```
 
-![Result](.\images\ques1.png)
+![Result](images\ques1.png)
 
 ## Answer 2
 
